@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Info</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'perfil/css/styles.css' %}">
+</head>
+<body>
+  <main class="wrapper">
+    <article class="card" aria-label="Tarjeta de información personal">
+      <header class="header">
+        <img class="avatar" src="https://i.pinimg.com/736x/e6/a9/8a/e6a98a257565d829009a1c1735ee1589.jpg" alt="Foto de perfil"/>
+        <div class="title">
+          <h1>Ernesto Aucan Robles Retamales</h1>
+          <p>Estudiante de Ingeniería Informática - INACAP</p>
+        </div>
+      </header>
+
+      <section class="content">
+        <!-- Información básica -->
+        <div class="section">
+          <h2>Información básica</h2>
+          <div class="grid-2">
+            <div class="field">
+              <div class="label">Nombre</div>
+              <div class="value">Ernesto Robles</div>
+            </div>
+            <div class="field">
+              <div class="label">Edad</div>
+              <div class="value">29 años</div>
+            </div>
+            <div class="field">
+              <div class="label">Ciudad</div>
+              <div class="value">Santiago, Chile</div>
+            </div>
+            <div class="field">
+              <div class="label">Email</div>
+              <div class="value">ernesto.robles@inacapmail.cl</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Motivos -->
+        <div class="section">
+          <h2>Motivos para estudiar la carrera</h2>
+          <ul class="list">
+            <li class="item">Me apasiona resolver problemas con tecnología.</li>
+            <li class="item">Quiero mejorar mis oportunidades laborales.</li>
+            <li class="item">Me llama la atención la ciberseguridad.</li>
+          </ul>
+        </div>
+
+        <!-- Otros -->
+        <div class="section">
+          <h2>Otros</h2>
+          <ul class="list">
+            <li class="item">Habilidades: Python, SQL, MongoDB, Github.</li>
+            <li class="item">Intereses: Ciencia de datos, ci
